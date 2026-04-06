@@ -4,6 +4,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="stylesheetblooketblooks.css">
+<script src="Javascriptblooketblooks.js" defer></script>
   <title>Every Blooket Blook</title>
 </head>
 <audio id="bg-music" loop>
@@ -13,21 +14,6 @@
 <button id="music-toggle">
   🎵 Play Music
 </button>
-
-<script>
-  const music = document.getElementById("bg-music");
-  const toggleBtn = document.getElementById("music-toggle");
-
-  toggleBtn.addEventListener("click", () => {
-    if (music.paused) {
-      music.play();
-      toggleBtn.innerText = "🔇 Pause Music";
-    } else {
-      music.pause();
-      toggleBtn.innerText = "🎵 Play Music";
-    }
-  });
-</script>
 <body>  
 
   <!-- Navigation bar -->
@@ -1517,25 +1503,6 @@ Ready to begin your journey to collect every blook? 🚀🎨 Let’s go! 🎯�
   <span class="download-label">Download All Icons</span>
 </a>
 </center>
-
-
-
-  <script>
-    // Accordion: only one open at a time
-    const details = document.querySelectorAll("details");
-    details.forEach((targetDetail) => {
-      targetDetail.addEventListener("toggle", () => {
-        if (targetDetail.open) {
-          details.forEach((detail) => {
-            if (detail !== targetDetail) {
-              detail.open = false;
-            }
-          });
-        }
-      });
-    });
-  </script>
-
 </body>
 </html>
 </center>
